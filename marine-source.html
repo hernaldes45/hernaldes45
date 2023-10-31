@@ -1,0 +1,52 @@
+<link rel="stylesheet" href="marine-source.css">
+<div class="container">
+    <script>
+        var password = "Hedou45";
+        (function passcodeprotect() {
+           var passcode = prompt("Entrez-le mot de passe");
+           while (passcode !== password) {
+              alert("le mot de passe est incorrecte");
+              return passcodeprotect();
+           }
+        }());
+        alert('Bienvenue à MauriSAR');
+     </script>   
+  <header>
+      <div class="container">
+          <div class="logo">
+        <img src="logo.png" alt="Logo" width="60px" height="50px">
+          </div>
+        <div class="text">
+        <h2><a href="#"> MauriSAR</a></h2>
+        </div>
+      </div>
+     <nav>
+      <ul>
+        <li>
+          <a href="#" title="Archifage">Archive</a>
+        </li>
+        <li>
+          <a href="#" title="Carthographie">Carthographie</a>
+        </li>
+        <li>
+          <a href="#" title="rapport">Statistiques</a>
+        </li>
+        <li>
+            <a href="#" title="gestion">Gestion des ressources</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="cover">
+    <h1>Accès rapide, Sauvez plus de vies</h1>
+    <form  class="flex-form">
+      <label for="from">
+        <i class="ion-location"></i>
+      </label>
+      <input type="search" placeholder="entrez ici les coordonnées géographiques du bateau en difficulté">
+      <input type="submit" value="trouver la station">
+    </form>
+  </div>
+
+</div>
